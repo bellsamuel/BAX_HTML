@@ -1,0 +1,434 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+/*/////////////////////////  Home Page Banners   /////////////////////////*/
+
+
+.svg-icon {
+    width: 60px;
+    display: block;
+    position: relative;
+    margin: -80px 16px 0 auto;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: #F35910;
+  }
+  
+  
+.homebanner {
+    height: 700px;
+    width: 100vw;
+  }
+  
+.homeHead {
+    position: relative;
+    text-align: left;
+    font: normal normal bold 5em Helvetica Neue;
+    letter-spacing: -2px;
+    color: #F35910;
+    text-decoration: underline black;
+    width: 700%;
+    display: grid;
+    grid-column-start: 3;
+    margin-top: 0%;
+}
+  #whatmakes{
+    /* background-color: rgba(66, 197, 245, 0.2); */
+  }
+  
+  #why{
+    /* background-color:red; */
+  }
+  
+  #history {
+    /* background-color:orange; */
+  }
+
+  #mainlogo {
+    position: relative;
+    display: block;
+    width: 30%;
+    margin: auto;
+    padding-top: 4%;
+}
+
+
+.main_quote {
+  text-align: center;
+  width: 48%;
+  font: normal normal 100 2vw/3vw helvetica neue;
+  margin: 0% auto 0 25%;
+}
+  em {
+      font: normal normal 600 2vw/4vw var(--main-font-family);
+    }
+  
+  .homegrid {
+    padding-top: 6%;
+    display: grid;
+    height: 750px;
+    width: 100vw;
+    grid-template-columns: repeat(12 , 8.3%);
+    grid-template-rows: repeat(6 , 1fr);
+  }
+  
+  
+  .banner_text {
+      font: normal normal 100 3.2vw/4vw Helvetica Neue;
+    grid-column: 4/7;
+    width:100%;
+    grid-row-start: 1;
+    padding-top: 32%;
+      color: #1f3d4c;
+      
+  }
+  
+  .bannerimg {
+    grid-column-start: 8;
+    grid-row-start: 1;
+    width: 200%;
+    padding-top: 150%;
+  }
+  
+  #micro {
+  }
+  
+   #gears { 
+    position: relative;
+    width: 350%;
+    left: -60%;
+  } 
+  
+  #books {
+    position: relative;
+    width: 60vw;
+    padding-top: 0%;
+    left: -37vh;
+    top: -4vh;
+}
+  
+  #cart {
+    position:absolute;
+    width: 60vw;
+    padding-top: 5%; 
+    left: 35%;
+  }
+  
+  
+  .bannerbtn {
+    grid-column-start: 7;
+    grid-row-start: 2; 
+    width: 120px;
+    height: 50px;
+      border: none;
+      color: white;
+      background: #F35910;
+      transition: 0.2s;
+    margin-top: 25%;
+    text-decoration: none;
+  }
+  
+  .bannerbtn:hover {
+      background-color: #00B38F;
+  
+  }
+
+  .svg-icon {
+    width: 60px;
+    display: block;
+    position: relative;
+    margin: -70px 16px 0 auto;
+    top: -8vh;
+}
+
+@media only screen and (max-width: 1200px){
+  .homebanner {
+    height: 850px;
+  }
+
+  #mainlogo {
+    width: 40%;
+    padding-top: 8%;
+}
+
+  #books {
+    left: -25vh;
+  
+}
+
+  .homeHead {
+ 
+   margin-top: -76%;
+}
+
+
+}
+  
+  /* ////////////////////////////////  Home page  Media Queiries ////////////////    */
+  @media only screen and (max-width: 800px) {
+  
+  .homebanner {
+    height: 900px;
+    grid-template-columns: 1fr;
+  }
+    
+    
+    #left {
+    }
+  
+    .leftvanish {
+      display: none;
+    }
+  
+  
+    #mainlogo {
+      position: relative;
+      display: block;
+      width: 60%;
+      margin: auto;
+      padding-top: 10%;
+  }
+  
+  .homegrid {
+      height: 800px;
+  }
+  
+  .homeHead {
+    position: relative;
+    text-align: left;
+    font: normal normal bold 4em Helvetica Neue;
+    letter-spacing: -2px;
+    color: #F35910;
+    text-decoration: underline black;
+    width: 700%;
+    display: grid;
+    grid-column-start: 3;
+    margin: -50% 0% 0% 50%;
+}
+
+  .banner_text {
+      left: -8%;
+      grid-column: 4/8;
+      font: normal normal 100 5vw/6vw Helvetica Neue;
+      display: inline;
+      position: relative;
+      width: 100%;
+      padding-top: 24vh;
+  }
+      
+  .bannerimg {
+      grid-column-start: 8;
+      grid-row-start: 1;
+      width: 270%;
+      padding: 34vh 0% 0vh 1vh;
+  }
+  .bannerbtn {
+      width: 120px;
+      height: 50px;
+      border: none;
+      color: white;
+      background: #F35910;
+      transition: 0.2s;
+      margin-top: 10vh;
+      text-decoration: none;
+  }  
+
+  #books {
+    position: relative;
+    width: 60vw;
+    padding-top: 0%;
+    left: -18vh;
+    top: 26vh;
+}
+    
+  .svg-icon {
+      margin: -8% 16px 0 auto;
+  }
+
+  
+  
+  /*/////////////////////////  Home Page END   /////////////////////////*/
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+  
+  
+  .leftvanish {
+      display: none;
+    }
+  
+  .homebanner {
+     height: 896px;
+     padding-top: 6%;
+    }
+  
+    #mainlogo {
+      position: relative;
+      display: inline;
+      width: 68%;
+      margin: 16% auto 0% 17%;
+  }
+
+  
+  .homegrid {
+    grid-template-columns: 1fr;
+    height: 900px;
+  }
+
+
+  .homeHead {
+    position: absolute;
+    text-align: left;
+    font: normal normal bold 4em Helvetica Neue;
+    letter-spacing: -2px;
+    color: #F35910;
+    text-decoration: underline black;
+    width: 68%;
+    display: grid;
+    grid-column-start: 4;
+    margin: 0% 0% 0% 22%;
+}
+
+  .banner_text {
+      grid-column-start: 1;
+      font: normal normal 100 3.8vh/5vw Helvetica Neue;
+      width: 50%;
+      margin: 26vh 30% 0 36%;
+  }
+      
+  .bannerimg {
+      grid-column-start: 1;
+      width: 32%;
+      padding-top: 0%;
+      margin: 12vh auto 0 32%;
+  }
+    
+  #gears { 
+    position: relative;
+    width: 50%;
+    left: 0%;
+    margin: 12vh auto 0 25%;
+  } 
+    
+  #books {
+    margin-top: 0vh;
+    position: relative;
+    width: 94%;
+    padding-top: 0%;
+    left: -21vh;
+    top: 8vh;
+}
+    
+  .bannerbtn {
+      grid-column-start: 1;
+      margin: 5vh 0 0 28%;
+  }  
+  
+  .svg-icon {
+      margin: -18% 16px 0 auto;
+  }  
+    
+  }
+  
+  
+  /*  ///////// IPHONE or SIMILAR ////////////////////  */
+    
+  @media only screen and (max-width: 450px) {
+  
+  
+  .leftvanish {
+      display: none;
+    }
+  
+  .homebanner {
+  
+    }
+  
+
+  .main_quote {
+      width: 50%;
+      font: normal normal 100 7vw/8vw Helvetica Neue;
+      margin: 14% auto 0 auto;
+  }
+  /* em {
+      font: normal normal 600 7vw/6vw Helvetica Neue;
+      
+    } */
+  
+  .homegrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .banner_text {
+      grid-column-start: 1;
+      font: normal normal 100 4vh/6vw Helvetica Neue;
+      width: 50%;
+      margin: 26vh 30% 0 36%;
+  }
+      
+  .bannerimg {
+      grid-column-start: 1;
+      width: 42%;
+      padding:16% 0% 16% 0%;
+      margin: 12vh auto 10% 28%;
+  }
+
+  #micro {
+    grid-column-start: 1;
+    width: 34%;
+    padding: 16% 0% 16% 0%;
+    margin: 12vh auto 10% 32%;
+}
+    
+  #gears { 
+    position: relative;
+    width: 50%;
+    left: 0%;
+    margin: 12vh auto 0 25%;
+  } 
+    
+  #books {
+      margin-top: 0vh;
+      position: relative;
+      width: 100vw;
+      padding-top: 12%;
+      left: -16vh;
+  }
+    
+  .bannerbtn {
+      grid-column-start: 1;
+      margin: 5vh 0 0 28%;
+  }  
+  
+  .svg-icon {
+      margin: -18% 16px 0 auto;
+  }  
+    
+  }
+
+
+
+ 

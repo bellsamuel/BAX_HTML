@@ -1,0 +1,189 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Real CSS Starts here */
+
+
+em {
+  font-size: 100px;
+  font-family: serif;
+}
+
+.test_grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  margin:0% 0 0% 0;
+  height: 775px;
+  
+}
+
+.musician {
+  display: grid;
+  grid-column: 3/10;
+  grid-row: 1/2;
+  margin: 0 0 auto 0;
+  padding-top: 12%;
+  text-align: left;
+  font: normal normal bold 6vw/6vh Helvetica Neue;
+  letter-spacing: -3.6px;
+  color: #F35910;
+  text-decoration: underline black;
+  width: 100%;
+}
+
+.test_grid blockquote {
+  position: relative;
+  display: grid;
+  grid-column: 4/7;
+  text-align: left;
+  font: normal normal 200 1em/1.7em Helvetica Neue;
+  letter-spacing: 0px;
+  margin: 20% auto 20% auto;
+}
+
+
+.img_circle {
+  top: 60px;
+  display: grid;
+  grid-column: 8/11;
+}
+
+.img_circle img {
+  top: 25%;
+  width: 80%;
+  margin: 20% 0 0 0;
+}
+
+.hr1 {
+    margin-top: -5%;
+    height: 20px;
+    background-color: red;
+    background-image: linear-gradient(90deg, #F35910, transparent);
+    width: 50%;
+    border: 0;
+}
+
+.finalHr {
+    height: 2px;
+    background-color: black;
+    width: 50%;
+    border: 0;
+}
+
+.friends {
+  position:relative;
+  display: grid;
+  grid-column: 6/10;
+  font: normal normal 200 130%/1.9em Helvetica Neue;
+}
+
+.svg-icon {
+  width: 60px;
+  display: block;
+  position: relative;
+  margin: -6% 16px 0 auto;
+   
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #F35910;
+}
+
+/* -------- Ipad -------- */
+
+@media only screen and (max-width: 1000px) {
+  
+.test_grid {
+    display: block;
+    height: 614px;
+    margin: 0% auto 0% auto;
+  }
+  
+.musician {
+  display:block;
+  text-align: center;
+  font: normal normal bold 10vw/6vh Helvetica Neue;
+ 
+}
+
+.test_grid blockquote {
+  display:block;
+  width: 50%;
+  margin: 8% auto auto auto;
+  font: normal normal 200 2vh/1.6em Helvetica Neue;
+    
+}
+
+.friends {
+  display: block;
+  width: 60%;
+  font: normal normal 200 1em/1.9em Helvetica Neue;
+  margin: 10% auto 0 auto;
+}
+  
+
+.img_circle {
+  display: block;
+}
+
+.img_circle img {
+  position: relative;
+  top:0;
+  width: 30%;
+  margin: 6% auto 0 35%;
+}
+
+
+/* -------- MOBILE -------- */
+
+@media only screen and (max-width: 450px) {
+  
+
+
+}

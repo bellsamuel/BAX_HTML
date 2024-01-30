@@ -1,0 +1,305 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Real CSS Starts here */
+
+
+.process_grid {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 2fr 2fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 750px;
+ 
+}
+
+#disassemblySect, #refretSect, #bracingSect, #tuningSect{
+  /* background: rgba(255, 245, 321, 0.9); */
+}
+
+.processHead {
+  position:relative;
+  text-align: left;
+  font: normal normal bold 6vw Helvetica Neue;
+  letter-spacing: -2px;
+  color: #F35910;
+  text-decoration: underline black;
+  width: 200%;
+  display:grid;
+  grid-column:2/ span 3;
+  margin-top: 10%;
+}
+
+.processBlurb {
+  position: relative;
+  display: grid;
+  grid-column: 5/ span 2;
+  grid-row: 2/ span 2;
+  width: 60%;
+  text-align: left;
+  font: normal normal 100 1.4em/2.5vw Helvetica Neue;
+  letter-spacing: 0px;
+  margin: 10% 0 0 -10%;
+}
+
+
+.svg {
+  display: grid;
+  grid-column: 1 /span 2;
+  grid-row: 2/ span 2;
+  width: 140%;
+  margin: -20% 0 0 32%;
+}
+
+#refretImg, #bracingImg{
+  width: 90%;
+  margin-top: 4%;
+}
+
+.svg-icon {
+  width: 60px;
+  display: block;
+  position: relative;
+  margin: -80px 16px 0 auto;
+  
+   
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #F35910;
+}
+
+.svg-icon circle {
+  stroke: #F35910;
+  stroke-width: 1;
+  fill: white;
+}
+
+
+/* -------- Laptop -------- */
+
+@media only screen and (max-width: 1200px) {
+  
+  .processHead {
+  margin-top: 30%;
+}
+
+
+  
+}
+
+/* -------- Ipad -------- */
+
+@media only screen and (max-width: 875px) {
+  
+ /* .process_grid {
+  display: grid;
+  grid-template-columns: 4fr 2fr 2fr 2fr 2fr 4fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 550px;
+ 
+}
+  
+  .processHead {
+  position:relative;
+  text-align: center;
+  font: normal normal bold 8vw Helvetica Neue;
+  letter-spacing: -2px;
+  color: #F35910;
+  text-decoration: underline black;
+  width: 100%;
+  display:grid; 
+  grid-column: 1/ span 5;
+  margin-top: 5%;
+}
+
+
+
+.processBlurb {
+  position: relative;
+  display: grid;
+  grid-column: 4/ span 3;
+  grid-row: 2/ span 2; 
+  width: 60%;
+  align-items: center;
+  font: normal normal 100 3vw/3.5vw Helvetica Neue;
+  letter-spacing: 0px;
+  margin: 10% auto 0 auto;
+}
+
+
+.svg {
+  display: grid;
+  grid-column: 1/ span 2;
+  width: 180%;
+  margin: -10% auto 0 0%;
+} */
+
+  
+  }
+
+/* @media only screen and (max-width: 700px){
+
+.processHead {
+  margin-top: 15%;
+}
+
+#refretImg, #bracingImg {
+  width: 85%;
+  margin: 4% 0 0 10%;
+} */
+  
+/* -------- Tablet -------- */
+
+@media only screen and (max-width: 800px) {
+
+.process_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 750px;
+ 
+}
+  
+.processHead {
+  position:relative;
+  text-align: center;
+  font: normal normal bold 10vw Helvetica Neue;
+  letter-spacing: -3.6px;
+  color: #F35910;
+  text-decoration: underline black;
+  width: 100%;
+  display:grid; 
+  grid-column:1/ span 3;
+  margin-top: 10%;
+}
+
+
+
+.processBlurb {
+  position: relative;
+  display: grid;
+  grid-column-start: 1;
+  width: 60%;
+  align-items: center;
+  font: normal normal 100 4vw/4.5vw Helvetica Neue;
+  letter-spacing: 0px;
+  margin: 5% auto 0 auto;
+}
+
+
+.svg {
+  display: grid;
+  grid-column-start: 1;
+  width: 80%;
+  margin: 40% auto 0 auto;
+}
+
+#refretImg, #bracingImg, #bridgeImg{
+  width: 90%;
+  margin: 4% 0 0 5%;
+}
+  
+}
+  
+  
+  
+/* Phones */
+@media only screen and (max-width: 450px) {
+
+.process_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 680px;
+ 
+}
+  
+.processHead {
+  position:relative;
+  text-align: center;
+  font: normal normal bold 12vw Helvetica Neue;
+  letter-spacing: -3.6px;
+  color: #F35910;
+  text-decoration: underline black;
+  width: 100%;
+  display:grid; 
+  grid-column:1/ span 3;
+  margin-top: 15%;
+}
+
+
+
+.processBlurb {
+  position: relative;
+  display: grid;
+  grid-column-start: 1;
+  width: 60%;
+  align-items: center;
+  font: normal normal 100 5.5vw/5vw Helvetica Neue;
+  letter-spacing: 0px;
+  margin: 10% auto 0 auto;
+}
+
+
+.svg {
+  display: grid;
+  grid-column-start: 1;
+  width: 80%;
+  margin: 70% auto 0 auto;
+}
+
+#refretImg, #bracingImg{
+  width: 90%;
+  margin: 4% 0 0 5%;
+}
+
+#bridgeImg{
+  width: 90%;
+  margin: 4% 10% 0 0%;
+}
+  
+}

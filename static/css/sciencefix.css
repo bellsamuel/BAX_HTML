@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-font-family: helvetica neue;
+    background-color:#f5f5f5;
+}
+
+.sciencewrap {
+  display: grid;
+  grid-template-columns: repeat(12, 8.33%);
+  height: 750px; 
+  width: 100vw;
+  margin-bottom: 6%;
+
+}
+
+#thescience {
+  color: #F35910;
+  grid-column: 6/13;
+  grid-row-start: 1;
+  margin: 10% 0px 0vw 8vw;
+}
+
+.mainIntro {
+  grid-column: 3/12;
+  text-align: left;
+  font: normal normal bold 8vw/36px Helvetica Neue;
+  letter-spacing: -3.6px;
+  color: #000000;
+  margin: 10% 0px 0vw 8vw;
+} 
+
+.introCaption {
+  grid-column-start: 7;
+  text-align: left;
+  font: normal normal 100 1.6em/1.4em Helvetica Neue;
+  letter-spacing: 0px;
+  width: 350%;
+  margin: 60% 0 0 0;
+}
+
+#tensionPara {
+  font: normal normal 100 1.8em/3vw Helvetica Neue;
+  margin: 20% 0 0% 0;
+  grid-column: 5/ span 2;
+  width: 240%;
+}
+#vibePara{
+  font: normal normal 100 1.6em/1.1em Helvetica Neue;
+  margin: 0% 0 0% 0;
+  width: 300%;
+}
+
+#tensionSvg{
+  grid-column-start: 3; 
+  margin: -38vh auto 0% 14%;
+}
+
+#soundhole{
+    grid-column-start: 1;
+    margin: -38vw 0 0 13vw;
+    width: 40vw;
+}
+
+.scienceSVG {
+  grid-column-start: 1;
+  position: relative;
+  margin-top: -400px;
+  width: 60vw; 
+}
+
+
+.svg-icon {
+  width: 60px;
+  display: block;
+  position: relative;
+  margin: -80px 16px 0 auto;
+  
+   
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #F35910;
+}
+
+
+.svg-icon circle {
+  stroke: #F35910;
+  stroke-width: 1;
+  fill: white;
+}
+
+
+#jumbo, #xBracing, #time, #waveforms{
+  top: -14vh;
+  left: 4vw;
+}
+
+
+
+/* Small devices (ipads, 600px and down) */
+@media only screen and (max-width: 800px) {
+  
+  
+  
+.headLeft {
+  max-width: 40%;
+  padding-top: 35vh;
+}
+
+.headRight {
+  max-width: 40%;
+  padding-top: 35vh;
+}  
+
+.sciencewrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 650px;
+    width: 100vw;
+}
+
+.mainIntro {
+    grid-column-start: 1;
+    text-align: left;
+    display: block;
+    font: normal normal bold 2.2em/0.8em Helvetica Neue;
+    letter-spacing: 0px;
+    width: 52vw;
+    margin: 16vh auto 0vh auto;
+}
+
+.introCaption {
+    grid-column-start: 1;
+    font: normal normal 100 1.4em/1.2em Helvetica Neue;
+    letter-spacing: 0px;
+    width: 50vw;
+    margin: 1em auto 0 auto;
+}
+
+#thescience {
+  font: normal normal bold 3em/1.2em Helvetica Neue;
+  grid-column-start: 1;
+  margin: 10% 0px 0vw 25vw;
+}
+
+#tensionPara {
+  grid-column-start: 1;
+  font: normal normal 100 1.2em/1.2em Helvetica Neue;
+  letter-spacing: 0px;
+  width: 50vw;
+  margin: 1em auto 0 auto;
+}
+  
+#vibePara {
+grid-column-start: 1; 
+  font: normal normal 100 1.3em/1.3em Helvetica Neue;
+  letter-spacing: 0px;
+  width: 52vw;
+  margin: 0 auto 0 auto;
+}
+.scienceSVG {
+  position: relative;
+  width: 70vw;
+  top:0;
+  margin: 16vh 18vw 0px auto;
+}
+
+#tensionSvg{
+  grid-column-start: 1; 
+  margin: -10vh auto 0 14%;
+}
+  
+#soundhole{
+  margin: 0vh auto 0 auto;
+}
+  
+#jumbo, #xBracing, #time, #waveforms{
+  top: -22vh;
+  left: 0vw;
+  margin: 21vh 0vw 0px 12%;
+}
+  
+}
+
+
+
+
+

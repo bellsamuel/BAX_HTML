@@ -1,0 +1,254 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/auu1caa.css">
+  <link rel="stylesheet" href="/static/css/overlay.css">
+  <meta name="theme-color" content="#fafafa">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+  <!-- ****************    Navigation overlay, controls and headstocks **********************  -->
+
+  <section>
+    <div class="controlsMenu" onclick="openNav()">
+      <a href="javascript:void(0)"><svg height='50' width="50">
+          <circle cx="25" cy="25" r="25" />
+          <circle cx="25" cy="25" r="11.5" fill="white" />
+          <circle cx="25" cy="25" r="5.75" fill="#F35910" />
+        </svg></a>
+      <h1 id='close'>Menu</h1>
+    </div>
+
+    <section class="overwrapper" id="overlay">
+
+      <div class="controlsClose" onclick="closeNav()">
+        <a href="javascript:void(0)"><svg height='50' width="50">
+            <circle cx="25" cy="25" r="25" />
+            <circle cx="25" cy="25" r="11.5" fill="white" />
+            <circle cx="25" cy="25" r="5.75" fill="#F35910" />
+          </svg></a>
+        <h1 id='close'>Close</h1>
+      </div>
+
+
+      <div class="halfLeft">
+      </div>
+      <div class="half">
+      </div>
+
+
+      <div class="left_banner">
+        <a href="home.html"><img id="logo" src="static/img/Logo_Orange_Smoke.svg"></a>
+
+
+
+      </div>
+
+      <!-- -------- NAV Links   --------------   -->
+      <nav class="overlayNav">
+
+        <ul class='nav_left'>
+          <a href="process.html">
+            <li class="nav-item">Process</li>
+          </a>
+          <a href="science.html">
+            <li class="nav-item">Science</li>
+          </a>
+          <a href="likes.html">
+            <li class="nav-item">Likes</li>
+          </a>
+          <a href="testimonials.html">
+            <li class="nav-item">Friends</li>
+          </a>
+        </ul>
+
+        <ul class="nav_right">
+          <a href="crew.html">
+            <li class="nav-item">Crew</li>
+          </a>
+          <a href="history.html">
+            <li class="nav-item">History</li>
+          </a>
+          <a href="contact.html">
+            <li class="nav-item">Contact</li>
+          </a>
+          <a href="blog.html">
+            <li class="nav-item">Blog</li>
+          </a>
+          <!--         <a href='#'><li class="nav-item">Shop</li></a> -->
+        </ul>
+
+      </nav>
+
+      <div class="mobileSocials">
+
+        <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/baxendaleconversions" class="google"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+
+      </div>
+
+
+
+
+
+
+      <div class="right_banner">
+
+        <!----------  SOCIALS ------------->
+        <div class="nav_socials">
+
+          <ul>
+            <li>
+              <h1>Socials:
+                <h1 />
+            </li>
+            <a href="https://www.instagram.com/baxendaleconversions">
+              <li>Instagram</li< /a>
+                <a href="#">
+              <li>Twitter</li>
+            </a>
+            <a href="#">
+              <li>YouTube</li>
+            </a>
+            <a href="#">
+              <li>Linkedin</li< /a>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+
+
+      <!-------  Nav Address Section -------->
+
+      <div class="nav_address_grid">
+
+        <section class="nav_address">
+
+          <a href="#">
+            <h6>Baxendale Guitar<br>
+              160 Winston Drive<br>
+              Athens, GA
+            </h6>
+          </a>
+          <h4><a href="">706-546-1116</a></h4>
+
+        </section>
+
+      </div>
+    </section>
+
+
+    <!-- OVERLAY SCRIPTS  -->
+    <script>
+
+      function openNav() {
+        document.getElementById('overlay').style.transform = "translateY(0vh)";
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
+        console.log("hello");
+        document.getElementById('overlay').style.transform = "translateY(-120%)";
+      }
+    </script>
+
+
+
+    <!--------------    HEADSTOCKS    ------------->
+
+    <img class="headLeft" src="/static/img/Left.svg" alt="Martin style slotted guitar headstock green">
+
+    <img class="headRight" src="/static/img/Right.svg" alt="Gibson style guitar headstock blue">
+
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+
+      <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/baxendaleconversions" class="google"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+    </div>
+
+  </section>
+  <!-- ••••••••••••••••• END NAV OVERLAY and Sideheadstocks ••••••••••••••••• -->
+
+
+  <!-- ----------------------------------- FOOTER ------------------------------------------- -->
+  <footer class="deskfoot" id="footer">
+
+    <section class="footaddress">
+      <h3 class="footHead">Visit Us:</h3>
+      <h4><a
+          href="https://www.google.com/maps/place/Baxendale+Guitar/@33.9767233,-83.3979246,17z/data=!3m1!4b1!4m5!3m4!1s0x88f66d34ab467bcb:0x90823e6a94252850!8m2!3d33.9763663!4d-83.3955671">Baxendale
+          Guitar<br>
+          160 Winston Drive<br>
+          Athens, GA<br>30607<br>
+          United States of America
+        </a></h4>
+      <h3 class="footHead">Call Us:</h3>
+      <h4><a href="tel:+1 706-546-1116">+1 706-546-1116</a></h4>
+      <h3 class="footHead">Email Us:</h3>
+      <h4><a href="mailto:bell.samuel@mac.com">info@baxendaleconversions.com</a>
+
+    </section>
+
+    <section class="footsocials">
+      <h3 class="footHead">Follow Us:</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </section>
+
+    <section class="footnav">
+      <ul>
+        <li><a href="{% url 'history' %}">History</a></li>
+        <li><a href="{% url 'science' %}">Science</a></li>
+        <li><a href="{% url 'process' %}">Process</a></li>
+        <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
+        <li><a href="{% url 'team' %}">Team</a></li>
+        <li><a href="{% url 'blog' %}">Blog</a></li>
+      </ul>
+    </section>
+
+    <div class="mailing">
+      <h3 class="footHead">Mailing List:</h3>
+
+      <form>
+        <label for="email">For new rebuilds, techniques, and articles, sign up here:</label>
+        <br>
+        <button class="button" type="submit" value="Sign up"><a href="{% url 'sign_up' %}">Sign Up</a></button>
+      </form>
+    </div>
+
+  </footer>
+
+
+
+  <!-- <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script> -->
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+</body>
+
+
+</html>
